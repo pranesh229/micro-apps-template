@@ -1,21 +1,27 @@
-import { NgModule } from "@angular/core";
+import { NgModule, Injector } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-
-import { AppComponent } from "./app.component";
 import { TestOneComponent } from "./test-one/test-one.component";
 import { TestTwoComponent } from "./test-two/test-two.component";
-import { TestThreeComponent } from './test-three/test-three.component';
-
-// Include the `PopupService` provider,
-// but exclude `PopupComponent` from compilation,
-// because it will be added dynamically.
+import { TestThreeComponent } from "./test-three/test-three.component";
+import { createCustomElement } from "@angular/elements";
 
 @NgModule({
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
-  declarations: [AppComponent, TestOneComponent, TestTwoComponent, TestThreeComponent],
-  bootstrap: [AppComponent],
+  declarations: [TestOneComponent, TestTwoComponent, TestThreeComponent],
+  bootstrap: [],
   entryComponents: [TestOneComponent, TestTwoComponent, TestThreeComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(injector: Injector) {
+    const TestOneElement = createCustomElement(TestOneComponent, { injector });
+    customElements.define("app-test-one", TestOneElement);
+    const TestTwoElement = createCustomElement(TestTwoComponent, { injector });
+    customElements.define("app-test-two", TestTwoElement);
+    const TestThreeElement = createCustomElement(TestThreeComponent, {
+      injector
+    });
+    customElements.define("app-test-three", TestThreeElement);
+  }
+}
