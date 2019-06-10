@@ -5,13 +5,24 @@ import { TestOneComponent } from "./test-one/test-one.component";
 import { TestTwoComponent } from "./test-two/test-two.component";
 import { TestThreeComponent } from "./test-three/test-three.component";
 import { createCustomElement } from "@angular/elements";
+import { AppComponent } from "./app/app.component";
 
 @NgModule({
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
-  declarations: [TestOneComponent, TestTwoComponent, TestThreeComponent],
-  bootstrap: [],
-  entryComponents: [TestOneComponent, TestTwoComponent, TestThreeComponent]
+  declarations: [
+    AppComponent,
+    TestOneComponent,
+    TestTwoComponent,
+    TestThreeComponent
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [
+    AppComponent,
+    TestOneComponent,
+    TestTwoComponent,
+    TestThreeComponent
+  ]
 })
 export class AppModule {
   constructor(injector: Injector) {
