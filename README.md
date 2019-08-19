@@ -6,3 +6,6 @@ Sample to use Angular elements in Multipage application
 
     npm install
     npm start
+
+
+Ref - https://blog.angulartraining.com/tutorial-how-to-create-custom-angular-elements-55aea29d80c5
