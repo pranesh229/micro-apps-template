@@ -11,13 +11,18 @@ import { createCustomElement } from '@angular/elements';
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
   declarations: [
+    AppComponent,
     TestOneComponent,
     TestTwoComponent,
-    TestThreeComponent,
-    AppComponent
+    TestThreeComponent
   ],
   bootstrap: [AppComponent],
-  entryComponents: [TestOneComponent, TestTwoComponent, TestThreeComponent]
+  entryComponents: [
+    AppComponent,
+    TestOneComponent,
+    TestTwoComponent,
+    TestThreeComponent
+  ]
 })
 export class AppModule {
   constructor(injector: Injector) {
