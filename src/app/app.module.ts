@@ -18,7 +18,10 @@ export class AppModule {
     const TestTwoElement = createCustomElement(TestTwoComponent, {
       injector: this.injector
     });
-    customElements.define('app-test-two', TestTwoElement);
+    if (!customElements.get('app-test-two')) {
+      customElements.define('app-test-two', TestTwoElement);
+    }
+
     // const TestThreeElement = createCustomElement(TestThreeComponent, {
     //   injector: this.injector
     // });
