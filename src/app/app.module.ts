@@ -21,7 +21,7 @@ export class AppModule {
     if (!customElements.get('app-test-two')) {
       customElements.define('app-test-two', TestTwoElement);
     }
-
+    // customElements.define('app-test-two', TestTwoElement);
     // const TestThreeElement = createCustomElement(TestThreeComponent, {
     //   injector: this.injector
     // });
