@@ -1,4 +1,4 @@
-# angular-elements-sample
+# Angular Micro app sample
 
 Sample to use Angular elements in Multipage application
 
@@ -6,6 +6,10 @@ Sample to use Angular elements in Multipage application
 
     npm install
     npm start
+
+## Generate Production build 
+
+    npm run build
 
 ## Parent Element
 
