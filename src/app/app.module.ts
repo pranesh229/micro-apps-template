@@ -19,9 +19,9 @@ export class AppModule {
       injector: this.injector
     });
     customElements.define('app-test-two', TestTwoElement);
-    const TestThreeElement = createCustomElement(TestThreeComponent, {
-      injector: this.injector
-    });
-    customElements.define('app-test-three', TestThreeElement);
+    // const TestThreeElement = createCustomElement(TestThreeComponent, {
+    //   injector: this.injector
+    // });
+    // customElements.define('app-test-three', TestThreeElement);
   }
 }

@@ -7,5 +7,10 @@ Sample to use Angular elements in Multipage application
     npm install
     npm start
 
+## Parent Element
 
-Ref - https://blog.angulartraining.com/tutorial-how-to-create-custom-angular-elements-55aea29d80c5
+Here test-two is the parent Element
+
+## Child component
+
+Here test-three is the child element
