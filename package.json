@@ -27,8 +27,6 @@
     "@angular/upgrade": "^8.2.2",
     "angular-in-memory-web-api": "github:brandonroberts/in-memory-web-api-bazel#50a34d8",
     "core-js": "^2.5.4",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
     "rxjs": "^6.3.0",
     "zone.js": "~0.9.1"
   },
@@ -42,6 +40,8 @@
     "@types/jasminewd2": "^2.0.4",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.0.0",

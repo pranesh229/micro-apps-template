@@ -13,8 +13,10 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "customWebpackConfig":{ "path": "./extra-webpack.config.js",
-              "mergeStrategies": { "externals": "replace" } },
+            "customWebpackConfig": {
+              "path": "./extra-webpack.config.js",
+              "mergeStrategies": { "externals": "replace" }
+            },
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -22,8 +24,7 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets", "src/index2.html"],
             "styles": ["src/styles.css"],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
